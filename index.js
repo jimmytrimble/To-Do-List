@@ -19,6 +19,7 @@ addButton.addEventListener("click", function(){
         text.innerHTML = " " + input.value
         let deleteButton = document.createElement("button")
         deleteButton.innerHTML = "Remove"
+        deleteButton.setAttribute("class","delete")
         newItem.appendChild(deleteButton)
         newItem.appendChild(text)
         list.appendChild(newItem)
