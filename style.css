@@ -33,12 +33,26 @@ img {
     border-radius: 25px;
 }
 
-#input {
+input {
     font-family: "Segoe UI","SF Pro","Ubuntu",sans-serif;
     color: #eff;
     background-color: #69b;
     border: 2px solid #8bd;
     border-radius: 4px;
+}
+
+button {
+    font-family: "Segoe UI","SF Pro","Ubuntu",sans-serif;
+    color: #eff;
+    background-color: #8bd;
+    border: 2px solid #8bd;
+    border-radius: 4px;
+}
+
+button:hover {
+    color: #bdd;
+    background-color: #479;
+    border: 2px solid #479;
 }
 
 .delete {
@@ -53,18 +67,4 @@ img {
     color: #f88;
     background-color: #800;
     border: 2px solid #c00;
-}
-
-#add {
-    font-family: "Segoe UI","SF Pro","Ubuntu",sans-serif;
-    color: #eff;
-    background-color: #8bd;
-    border: 2px solid #8bd;
-    border-radius: 4px;
-}
-
-#add:hover {
-    color: #bdd;
-    background-color: #479;
-    border: 2px solid #479;
 }
