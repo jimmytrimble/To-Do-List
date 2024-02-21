@@ -1,7 +1,29 @@
 h1 {
-    color: purple;
+    color: #eef;
 }
 
 body {
-    background-color: lightblue
+    font-family: "Segoe UI","SF Pro","Ubuntu",sans-serif;
+    color: #eff;
+    background-color: #69b;
+}
+
+ol {
+    width: max-content;
+    border-radius: 7px;
+    border: 3px solid #8bd;
+    margin-bottom: 3px;
+}
+
+li {
+    margin-top: -3px;
+    width: max-content;
+    border-radius: 7px;
+    border: 3px solid #8bd;
+    margin-bottom: -3px;
+    margin-right: -3px;
+}
+
+img {
+    border-radius: 25px;
 }
