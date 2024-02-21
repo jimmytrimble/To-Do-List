@@ -8,7 +8,6 @@ function addStrikethrough(event){
 
 addButton.addEventListener("click", function(){
     if(document.getElementById("input").value){
-        count++
         let list = document.getElementById("todo")
         let newItem = document.createElement("li")
         newItem.innerHTML = document.getElementById("input").value
