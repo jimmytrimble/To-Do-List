@@ -6,13 +6,23 @@ function addStrikethrough(event){
     element.removeEventListener("click",addStrikethrough)
 }
 
+function deleteEntry(event){
+    event.target.parentNode.remove()
+}
+
 addButton.addEventListener("click", function(){
     if(document.getElementById("input").value){
         let list = document.getElementById("todo")
         let newItem = document.createElement("li")
-        newItem.innerHTML = document.getElementById("input").value
+        let text = document.createElement("span")
+        text.innerHTML = " " + document.getElementById("input").value
+        let deleteButton = document.createElement("button")
+        deleteButton.innerHTML = "Remove"
+        newItem.appendChild(deleteButton)
+        newItem.appendChild(text)
         list.appendChild(newItem)
-        newItem.addEventListener("click",addStrikethrough)
+        deleteButton.addEventListener("click",deleteEntry)
+        text.addEventListener("click",addStrikethrough)
         document.getElementById("input").value = ""
     }
 })
