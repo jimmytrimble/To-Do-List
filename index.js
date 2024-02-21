@@ -1,4 +1,5 @@
 let addButton = document.getElementById("add")
+let input = document.getElementById("input")
 
 function addStrikethrough(event){
     element = event.target
@@ -11,11 +12,11 @@ function deleteEntry(event){
 }
 
 addButton.addEventListener("click", function(){
-    if(document.getElementById("input").value){
+    if(input.value){
         let list = document.getElementById("todo")
         let newItem = document.createElement("li")
         let text = document.createElement("span")
-        text.innerHTML = " " + document.getElementById("input").value
+        text.innerHTML = " " + input.value
         let deleteButton = document.createElement("button")
         deleteButton.innerHTML = "Remove"
         newItem.appendChild(deleteButton)
@@ -23,9 +24,12 @@ addButton.addEventListener("click", function(){
         list.appendChild(newItem)
         deleteButton.addEventListener("click",deleteEntry)
         text.addEventListener("click",addStrikethrough)
-        document.getElementById("input").value = ""
+        input.value = ""
     }
 })
 
-console.log("My code is running");
-
+input.addEventListener("keyup", function(event){
+    if(event.key === "Enter"){
+        addButton.click()
+    }
+})
