@@ -8,6 +8,11 @@ body {
     background-color: #69b;
 }
 
+span {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
 ol {
     width: max-content;
     border-radius: 7px;
